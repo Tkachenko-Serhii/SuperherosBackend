@@ -10,7 +10,7 @@
 
 # POST "/superheros" - create new superheros. Request body - required
 
-# {
+{
 
         "nickname": "Batman",
         "real_name": "Clark Kent",
@@ -26,7 +26,7 @@
 
 # PUT "/superheros/:id" - Update data of superheros. Request parameter (id) - required. Request body - required.
 
-# {
+{
 
         "nickname": "Batman",
         "real_name": "Clark Kent",
@@ -35,3 +35,5 @@
 }
 
 # Responses: 200 - Ok; 400 - Missing required fields; 404 - Not found; 500 - Server error;
+
+Superheros Schema: nickname: string, real_name: string, superpowers: string,
