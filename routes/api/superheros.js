@@ -10,7 +10,7 @@ router.get('/', ctrl.getAll);
 
 router.get('/:id', ctrl.getById);
 
-router.post('/', upload.single('avatar'), ctrl.create);
+router.post('/create', upload.single('avatar'), ctrl.create);
 
 router.delete('/:id', ctrl.deleteById);
 
