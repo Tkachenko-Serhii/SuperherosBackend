@@ -34,9 +34,6 @@ const create = async (req, res, next) => {
     const newSuperhero = await Superhero.create(req.body);
     res.status(201).json(newSuperhero);
   } catch (error) {
-    if (error.message.includes('Validation failed')) {
-      error.status = 400;
-    }
     next(error);
   }
 };

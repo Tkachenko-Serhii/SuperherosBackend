@@ -14,6 +14,6 @@ router.post('/create', upload.single('avatar'), ctrl.create);
 
 router.delete('/:id', ctrl.deleteById);
 
-router.put('/:id', upload.single('avatar'), ctrl.updateById);
+router.put('/:id/update', upload.single('avatar'), ctrl.updateById);
 
 module.exports = router;
