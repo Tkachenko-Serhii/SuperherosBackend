@@ -35,6 +35,7 @@ const joiSchema = Joi.object({
   superpowers: Joi.string().min(3).required(),
   origin_description: Joi.string(),
   catch_phrase: Joi.string(),
+  avatarURL: Joi.string(),
 });
 
 const Superhero = model('superhero', superheroSchema);

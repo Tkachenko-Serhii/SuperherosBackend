@@ -3,6 +3,7 @@ const getAll = require('./getAll');
 const getById = require('./getById');
 const deleteById = require('./deleteById');
 const updateById = require('./updateById');
+const uploadAvatar = require('./uploadAvatar');
 
 module.exports = {
   create,
@@ -10,4 +11,5 @@ module.exports = {
   getById,
   deleteById,
   updateById,
+  uploadAvatar,
 };
